@@ -15,12 +15,50 @@ body {
 .sidebar {
     display: grid;
     grid-template-rows: 1fr 4fr 4fr;
-    gap: 10%;
-    background-color: lightblue;
+    gap: 5px;
+    background-color: #06b6d4;
+}
+
+.nav {
+    justify-self: start;
+    align-self: start;
+}
+
+.page-name {
+    font-size: 1.5rem;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    font-weight: 700;
+}
+
+.page-name svg {
+    width: 1.5rem;
 }
 
 .sidebar li {
     list-style: none;
+}
+
+.sidebar li button {
+    background-color: #06b6d4;
+    border: none;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-items: center;
+    padding: 2%;
+}
+
+svg {
+    fill: white;
+    width: 1.5rem;
 }
 
 .container {
