@@ -10,6 +10,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 3fr;
     height: 100vh;
+    /* margin: 0 20% 0 20%; */
 }
 
 .sidebar {
@@ -53,7 +54,7 @@ body {
     gap: 5px;
     align-items: center;
     justify-items: center;
-    padding: 2%;
+    padding: 10px;
 }
 
 svg {
@@ -69,16 +70,131 @@ svg {
 header {
     display: grid;
     grid-template: 1fr 1fr / 2fr 1fr;
+    background-color: white;
+    gap: 2px;
 }
 
 .search {
     display: flex;
     flex: 1;
     align-items: center;
+    justify-items: center;
+    gap: 15px;
+    padding: 5px;
+}
+
+.search svg {
+    fill: black;
+    opacity: 65%;
+    width: 1.8rem;
+    align-self: center;
+    justify-self: center;
 }
 
 .search-bar {
-    height: 50%;
+    background-color: #e0f2fe;
+    height: 1.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 45px;
+}
+
+.search-bar:focus {
+    outline: none;
+    border: 2px solid #fed7aa;
+}
+
+.account {
+    display: flex;
+    flex: 1;
+    gap: 15px;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.account svg {
+    fill: black;
+    opacity: 65%;
+    width: 1.5rem;
+    place-self: start;
+}
+
+.account button {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    gap: 15px;
+    place-content: center;
+    place-self: center;
+}
+
+.account button div {
+    align-self: center;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.account button img {
+    background-color: black;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 60px;
+    place-self: center;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 5px;
+}
+
+.greeting img {
+    background-color: black;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 60px;
+    place-self: center;
+}
+
+.greeting div {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    gap: 5px;
+}
+
+.greeting div div {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.buttons {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.buttons button {
+    background-color: #06b6d4;
+    border: none;
+    border-radius: 45px;
+    padding: 10px 15px 10px 15px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
 }
 
 .feed {
