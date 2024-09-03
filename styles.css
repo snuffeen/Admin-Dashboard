@@ -210,7 +210,7 @@ header {
 }
 
 .project-container-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
     padding: 10px;
     padding-left: 0;
@@ -229,7 +229,6 @@ header {
     background-color: white;
     border-left: 10px solid orange;
     border-radius: 10px;
-    box-shadow: inset;
     padding: 10px;
     padding-top: 5%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
@@ -269,17 +268,42 @@ header {
     opacity: 80%;
 }
 
-.announcement-cards {
+.announcements-container-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.announcement-cards-container {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(1, 1fr);
     height: 90%;
     gap: 5px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 5%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.announcement-cards div {
-    border: 1px solid grey;
+.announcement-card {
+    border: none;
+    border-bottom: 1px solid lightgray;
 }
 
+.announcement-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 5px;
+    padding-bottom: 15px;
+}
+
+.announcement-content {
+    font-size: 0.7rem;
+    height: 100%;
+    padding: 5px;
+}
 
 .trending-cards {
     display: grid;
