@@ -85,7 +85,7 @@ header {
 
 .search svg {
     fill: black;
-    opacity: 65%;
+    opacity: 80%;
     width: 1.8rem;
     align-self: center;
     justify-self: center;
@@ -115,7 +115,7 @@ header {
 
 .account svg {
     fill: black;
-    opacity: 65%;
+    opacity: 80%;
     width: 1.5rem;
     place-self: start;
 }
@@ -200,30 +200,79 @@ header {
 .feed {
     display: grid;
     grid-template: 4fr 3fr / 3fr 1fr;
-    background-color: burlywood;
+    background-color: #dbeafe;
+    gap: 10px;
 }
 
 .projects {
     grid-row: 1 / 4;
+    padding-left: 15px;
 }
 
-.project-cards {
+.project-container-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.project-cards-container {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     height: 90%;
-    padding: 2%;
-    gap: 5px;
+    gap: 5%;
 }
 
-.project-cards div {
-    border: 1px solid grey;
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-left: 10px solid orange;
+    border-radius: 10px;
+    box-shadow: inset;
+    padding: 10px;
+    padding-top: 5%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card .project-title {
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 15px;
+    flex-shrink: 2;
+}
+
+.project-card .project-content {
+    font-size: 0.8rem;
+    height: 100%;
+}
+
+.project-buttons {
+    display: flex;
+    flex-shrink: 2;
+    place-content: end;
+    gap: 5px;
+    padding-right: 10px;
+}
+
+.project-buttons button {
+    background-color: white;
+    border: none;
+    border-radius: 45px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.project-buttons button svg {
+    fill: black;
+    width: 1.2rem;
+    opacity: 80%;
 }
 
 .announcement-cards {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(1, 1fr);
     height: 90%;
-    padding: 2%;
     gap: 5px;
 }
 
@@ -236,7 +285,6 @@ header {
     display: grid;
     grid-template-rows: repeat(4, 1fr) ;
     height: 90%;
-    padding: 2%;
     gap: 5px;
 }
 
